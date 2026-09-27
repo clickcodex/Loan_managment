@@ -1,10 +1,4 @@
-# Environment configuration (protect credentials)
-.env
-.env.backup
-.env.local
 
-# Composer & Node dependencies
-/vendor/
 node_modules/
 **/node_modules/
 
