@@ -1,0 +1,32 @@
+# Environment configuration (protect credentials)
+.env
+.env.backup
+.env.local
+
+# Composer & Node dependencies
+/vendor/
+node_modules/
+**/node_modules/
+
+# Storage cache and logs
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/uploads/*
+!/storage/uploads/.gitkeep
+
+# Dynamic database backups
+/storage/backups/*
+!/storage/backups/.gitkeep
+
+# Session and temporary scratch files
+scratch/*.txt
+*.log
+
+# System and IDE files
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/
+.idea/

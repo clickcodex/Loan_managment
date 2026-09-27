@@ -1,0 +1,347 @@
+/* ==========================================================================
+   GOLDEN TRUST LMS - PROFESSIONAL HIGH-CONTRAST NAVY BLUE THEME SYSTEM
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. ROOT VARIABLES & PALETTE TOKENS
+   -------------------------------------------------------------------------- */
+:root {
+    --navy-950: #050d1a;
+    --navy-900: #0a192f;
+    --navy-850: #0d213f;
+    --navy-800: #0f2744;
+    --navy-700: #13335a;
+    --navy-600: #1e40af;
+    --navy-500: #2563eb;
+    --navy-slate: #1e293b;
+    --text-primary: #0a192f;
+    --text-secondary: #1e293b;
+    --text-muted: #334155;
+    --border-color: #cbd5e1;
+    --card-bg: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   2. LIGHT MODE - CRISP HIGH-CONTRAST DEEP NAVY BLUE READABILITY
+   -------------------------------------------------------------------------- */
+body.light {
+    background-color: #f4f6fb !important;
+    color: #0a192f !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+}
+
+/* Base Headings */
+body.light h1,
+body.light h2,
+body.light h3,
+body.light h4,
+body.light h5,
+body.light h6 {
+    color: #071938 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em !important;
+}
+
+/* High Contrast Paragraphs & Spans */
+body.light p,
+body.light span,
+body.light div,
+body.light label,
+body.light td,
+body.light th {
+    color: #0a192f;
+}
+
+/* Override faint muted slate colors with rich readable navy */
+body.light .text-slate-900,
+body.light .text-slate-800,
+body.light .text-slate-700 {
+    color: #0a192f !important;
+    font-weight: 600 !important;
+}
+
+body.light .text-slate-600 {
+    color: #13284c !important;
+    font-weight: 500 !important;
+}
+
+body.light .text-slate-500 {
+    color: #1e3a5f !important;
+    font-weight: 600 !important;
+}
+
+body.light .text-slate-400 {
+    color: #2c4a6f !important;
+    font-weight: 600 !important;
+}
+
+/* Form Controls & Inputs */
+body.light input,
+body.light select,
+body.light textarea {
+    background-color: #ffffff !important;
+    color: #050f24 !important;
+    font-weight: 600 !important;
+    border: 1.5px solid #94a3b8 !important;
+    box-shadow: 0 1px 2px 0 rgba(10, 25, 47, 0.05) !important;
+}
+
+body.light input:focus,
+body.light select:focus,
+body.light textarea:focus {
+    border-color: #1e40af !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.15) !important;
+}
+
+body.light input::placeholder,
+body.light textarea::placeholder {
+    color: #475569 !important;
+    font-weight: 500 !important;
+}
+
+/* Cards & Surface Containers */
+body.light .bg-white,
+body.light .bg-slate-900:not(.fixed):not([class*="fixed"]),
+body.light .bg-slate-955:not(.fixed):not([class*="fixed"]) {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 1px 4px 0 rgba(10, 25, 47, 0.06), 0 2px 8px -2px rgba(10, 25, 47, 0.04) !important;
+}
+
+body.light .border-slate-200,
+body.light .border-slate-100,
+body.light .border-slate-800,
+body.light .border-slate-700 {
+    border-color: #cbd5e1 !important;
+}
+
+/* Tables & Data Grids */
+body.light thead,
+body.light table thead tr {
+    background-color: #e8eef8 !important;
+    border-bottom: 2px solid #94a3b8 !important;
+}
+
+body.light thead th {
+    color: #0a192f !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.05em !important;
+}
+
+body.light tbody tr {
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+
+body.light tbody tr:hover {
+    background-color: #edf3fc !important;
+}
+
+body.light tbody td {
+    color: #0a192f !important;
+    font-weight: 600 !important;
+}
+
+/* Header & Navigation Bar in Light Mode */
+body.light header {
+    background-color: #ffffff !important;
+    border-bottom: 1.5px solid #cbd5e1 !important;
+    box-shadow: 0 2px 6px 0 rgba(10, 25, 47, 0.05) !important;
+}
+
+body.light aside {
+    background-color: #ffffff !important;
+    border-right: 1.5px solid #cbd5e1 !important;
+    box-shadow: 2px 0 6px 0 rgba(10, 25, 47, 0.03) !important;
+}
+
+body.light aside a {
+    color: #13284c !important;
+    font-weight: 600 !important;
+}
+
+body.light aside a:hover {
+    background-color: #e8eef8 !important;
+    color: #0a192f !important;
+}
+
+body.light aside a.bg-amber-500\/10,
+body.light aside a.bg-amber-500\/20 {
+    background-color: #fef3c7 !important;
+    color: #92400e !important;
+    border-color: #f59e0b !important;
+    font-weight: 800 !important;
+}
+
+/* High Contrast Accent Badges & Metrics */
+body.light .text-amber-600,
+body.light .text-amber-500,
+body.light .text-yellow-600 {
+    color: #b45309 !important;
+    font-weight: 800 !important;
+}
+
+body.light .text-emerald-600,
+body.light .text-emerald-500 {
+    color: #047857 !important;
+    font-weight: 800 !important;
+}
+
+body.light .text-blue-600,
+body.light .text-blue-500 {
+    color: #1d4ed8 !important;
+    font-weight: 800 !important;
+}
+
+body.light .text-purple-600,
+body.light .text-purple-500 {
+    color: #6b21a8 !important;
+    font-weight: 800 !important;
+}
+
+body.light .text-rose-600,
+body.light .text-rose-500 {
+    color: #be123c !important;
+    font-weight: 800 !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. DARK MODE - SLEEK OBSIDIAN & MIDNIGHT NAVY AESTHETICS
+   -------------------------------------------------------------------------- */
+body.dark {
+    background-color: #070d18 !important;
+    color: #f1f5f9 !important;
+}
+
+body.dark header {
+    background-color: rgba(13, 22, 38, 0.95) !important;
+    border-bottom: 1px solid #1e293b !important;
+}
+
+body.dark aside {
+    background-color: #0a1220 !important;
+    border-right: 1px solid #1e293b !important;
+}
+
+body.dark aside a {
+    color: #94a3b8 !important;
+}
+
+body.dark aside a:hover {
+    background-color: #132238 !important;
+    color: #ffffff !important;
+}
+
+body.dark .bg-slate-955,
+body.dark .bg-slate-950,
+body.dark .bg-slate-900 {
+    background-color: #0c1728 !important;
+    border-color: #1e293b !important;
+}
+
+body.dark input,
+body.dark select,
+body.dark textarea {
+    background-color: #070d18 !important;
+    color: #f8fafc !important;
+    border-color: #334155 !important;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+    color: #64748b !important;
+}
+
+body.dark thead {
+    background-color: #070d18 !important;
+    color: #cbd5e1 !important;
+    border-bottom: 2px solid #1e293b !important;
+}
+
+body.dark tbody tr:hover {
+    background-color: rgba(30, 58, 95, 0.25) !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. UTILITY & BADGE ENHANCEMENTS
+   -------------------------------------------------------------------------- */
+.font-mono {
+    letter-spacing: -0.01em;
+}
+
+.shadow-xs {
+    box-shadow: 0 1px 2px 0 rgba(10, 25, 47, 0.05);
+}
+
+/* --------------------------------------------------------------------------
+   5. UNIVERSAL MODAL & POPUP FROSTED GLASS BLUR BACKDROPS
+   -------------------------------------------------------------------------- */
+/* Only style active, visible modals. NEVER force display: flex !important */
+.modal-backdrop,
+.fixed.inset-0.z-50:not([style*="display: none"]):not([style*="display:none"]):not(.hidden):not([x-cloak]),
+.fixed.inset-0.z-\[9999\]:not([style*="display: none"]):not([style*="display:none"]):not(.hidden):not([x-cloak]) {
+    background-color: rgba(4, 10, 22, 0.76);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Modal Inner Container (Card) in Light Mode */
+body.light .fixed.inset-0.z-50 > div[class*="rounded-"],
+body.light .fixed.inset-0.z-\[9999\] > div[class*="rounded-"] {
+    background-color: #ffffff !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 25px 50px -12px rgba(4, 10, 22, 0.4), 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+    max-height: calc(100vh - 2.5rem);
+    overflow-y: auto;
+}
+
+/* Modal Inner Container (Card) in Dark Mode */
+body.dark .fixed.inset-0.z-50 > div[class*="rounded-"],
+body.dark .fixed.inset-0.z-\[9999\] > div[class*="rounded-"] {
+    background-color: #0c1728 !important;
+    border-color: #1e293b !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
+    max-height: calc(100vh - 2.5rem);
+    overflow-y: auto;
+}
+
+/* Ensure x-cloak elements remain hidden until Alpine is initialized */
+[x-cloak] {
+    display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. PHYSICAL VAULT SLOT POPOVER THEME ENGINE
+   -------------------------------------------------------------------------- */
+.slot-box:hover {
+    z-index: 50 !important;
+}
+
+body.light .slot-popover {
+    background-color: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.14), 0 8px 10px -6px rgba(15, 23, 42, 0.08) !important;
+    color: #0f172a !important;
+}
+
+body.light .slot-popover .slot-popover-arrow {
+    background-color: #ffffff !important;
+    border-color: #e2e8f0 !important;
+}
+
+body.dark .slot-popover {
+    background-color: #0c1728 !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.7), 0 8px 10px -6px rgba(0, 0, 0, 0.5) !important;
+    color: #f8fafc !important;
+}
+
+body.dark .slot-popover .slot-popover-arrow {
+    background-color: #0c1728 !important;
+    border-color: #334155 !important;
+}
